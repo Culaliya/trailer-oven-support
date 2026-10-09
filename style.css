@@ -1,0 +1,51 @@
+:root {
+  --ink: #2c0d1e;
+  --plum: #4a1634;
+  --rose: #7a1844;
+  --pink: #f6c6d8;
+  --blush: #fff4f8;
+  --line: #efc0d2;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Heiti TC", sans-serif;
+  background: var(--blush);
+  color: var(--ink);
+  line-height: 1.7;
+}
+header {
+  background: linear-gradient(165deg, #6e274b, #3a1228 62%);
+  color: #ffe9f2;
+  padding: 1.7rem 0 1.35rem;
+}
+.wrap { width: min(42rem, 100%); margin: 0 auto; padding: 0 1.25rem; }
+.brand { margin: 0; font-weight: 700; letter-spacing: 0.03em; }
+.brand span { color: var(--pink); }
+header h1 { margin: 0.3rem 0 0.4rem; font-size: clamp(1.55rem, 4vw, 2rem); }
+header p { margin: 0; }
+main.wrap { padding-top: 1rem; padding-bottom: 0.4rem; }
+nav { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0.2rem 0 1rem; }
+nav a {
+  color: var(--plum);
+  background: var(--pink);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+}
+nav a[aria-current="page"] { background: var(--plum); color: #fff5f8; }
+section {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 0.9rem 1rem 0.3rem;
+  margin: 0 0 0.85rem;
+}
+h2 { margin: 0 0 0.35rem; color: var(--plum); font-size: 1.12rem; }
+a { color: var(--rose); overflow-wrap: anywhere; }
+ol, ul { margin: 0.1rem 0 0.8rem; padding-left: 1.25rem; }
+li { margin: 0.3rem 0; }
+footer.wrap { padding-top: 0.15rem; padding-bottom: 2.2rem; color: var(--plum); font-size: 0.95rem; }
+footer p { margin: 0.25rem 0; }
+:focus-visible { outline: 3px solid var(--rose); outline-offset: 2px; }
